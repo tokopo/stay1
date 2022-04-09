@@ -1,0 +1,43 @@
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left-nav">
+        <a href="/"><img alt="サイトのロゴ画像" src="/assets/logo.png"></a>        
+</div>
+    <div class="header-right-nav">
+        <div class="nav-item">
+          <a class="btn btn-primary my-2 mx-3" href="/users/sign_in">ログイン</a>
+          <a class="btn btn-secondary" href="/users/sign_up">登録する</a>
+        </div>
+        </div>
+</div>
+</header>
+
+<div class="container device">
+  <div class="device_frame">
+    <p class="my-4">ログイン</p>
+    <div class="device_inner">
+      <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="pLX8+Sd2XO9luQXeu1z05Tfdx+eVd8J1UEEVhyTE9GoqY5JHdRjCoZPLooaa5F7mX4tKyBwNHVNa8dUbG8FoOw==">
+        <div class="field form-row">
+          <div class="col-2 required-b pt-2"></div>
+          <input autocomplete="email" class="form-control col-10 px-2" placeholder="メールアドレス" type="email" value="" name="user[email]" id="user_email">
+        </div>
+        <div class="field form-row">
+          <div class="col-2 required-b pt-2"></div>
+          <input autocomplete="current-password" class="form-control col-10 px-2" placeholder="パスワード" type="password" name="user[password]" id="user_password">
+        </div>
+        <div class="actions">
+          <input type="submit" name="commit" value="ログイン" class="form-control btn-primary my-4 " data-disable-with="ログイン">
+        </div>
+</form>      
+  <a href="/users/sign_up">新しいアカウントを作成</a><br>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+</body>
+
